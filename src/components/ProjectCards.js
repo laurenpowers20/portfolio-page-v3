@@ -2,15 +2,25 @@ import food from "../assets/foodathome.png";
 import trivia from "../assets/trivia.png";
 import shill from "../assets/shill.png";
 import Image from "next/image.js";
+import { container, item } from "../../animation.js";
+import { motion as m } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
 
 export default function ProjectCards() {
   return (
     <>
-      <div className="flex flex-wrap gap-5">
+      <m.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex flex-wrap gap-5"
+      >
         {/* project 1 */}
-        <div class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg w-full">
+        <m.div
+          variants={item}
+          class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg w-full"
+        >
           <Image
             src={food}
             alt="We Got Food at Home Logo"
@@ -63,9 +73,12 @@ export default function ProjectCards() {
               </ul>
             </p>
           </div>
-        </div>
+        </m.div>
         {/* project 2 */}
-        <div class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg">
+        <m.div
+          variants={item}
+          class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg"
+        >
           <Image
             src={trivia}
             alt="Game of Trivia Logo"
@@ -106,9 +119,12 @@ export default function ProjectCards() {
               appealing “bar trivia” theme and design.
             </p>
           </div>
-        </div>
+        </m.div>
         {/* project 3 */}
-        <div class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg">
+        <m.div
+          variants={item}
+          class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg"
+        >
           <Image
             src={shill}
             alt="Shill Social Logo"
@@ -118,7 +134,7 @@ export default function ProjectCards() {
           />
           <div class="px-6 py-4">
             <div class="font-bold text-neonBlue-500 text-xl text-center mb-2">
-              Game of Trivia
+              $hill Social
             </div>
             <div class="px-6 pt-4 pb-2 flex justify-center">
               <a
@@ -152,8 +168,8 @@ export default function ProjectCards() {
               TailwindCSS, Python, and Django
             </p>
           </div>
-        </div>
-      </div>
+        </m.div>
+      </m.div>
     </>
   );
 }

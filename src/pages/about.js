@@ -20,36 +20,41 @@ export default function About(props) {
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="lg:text-8xl text-5xl lg:text-left text-left text-neonPink-500"
+          className="lg:text-8xl text-5xl lg:text-left text-center text-neonPink-500"
         >
           About{" "}
         </m.h1>
-        <Image
-          src={headshot}
-          alt="Picture of Lauren"
-          width={210}
-          height={210}
-          className="rounded-full  justify-center sm:mx-auto lg:m-5 lg:float-left "
-        />
+        <m.div
+          className="sm:flex sm:justify-center"
+          animate={{ x: 0 }}
+          initial={{ x: "100%" }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <Image
+            src={headshot}
+            alt="Picture of Lauren"
+            width={200}
+            height={200}
+            className="rounded-full mx-auto my-5 m-5  "
+          />
+        </m.div>
 
         <m.div
           variants={container}
           animate="show"
           className="font-latoBold lg:text-4xl text-2xl"
         >
-          <p>
-            {" "}
-            I am an engineer based in New York City. My professional background
-            lies in financial operations, where I spent 12 years at JP Morgan
-            Chase. During my tenure there, I steadily progressed within the firm
-            and eventually became the assistant manager of one of its largest
-            branches in NYC. However, when my time in banking came to an end, I
-            saw an opportunity to pursue my passion for building and hands-on
-            work. I'm one of those rare people who love putting Ikea furniture
-            together and “figuring it all out!” I was inspired by my friends who
-            had completed Software Engineering Immersive programs and were
-            thriving in their roles.{" "}
-          </p>
+          {" "}
+          I am an engineer based in New York City. My professional background
+          lies in financial operations, where I spent 12 years at JP Morgan
+          Chase. During my tenure there, I steadily progressed within the firm
+          and eventually became the assistant manager of one of its largest
+          branches in NYC. However, when my time in banking came to an end, I
+          saw an opportunity to pursue my passion for building and hands-on
+          work. I'm one of those rare people who love putting Ikea furniture
+          together and “figuring it all out!” I was inspired by my friends who
+          had completed Software Engineering Immersive programs and were
+          thriving in their roles.{" "}
           <p>
             {" "}
             In the summer of 2022, I began teaching myself JavaScript and coding
