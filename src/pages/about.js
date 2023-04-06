@@ -26,9 +26,9 @@ export default function About(props) {
         </m.h1>
         <m.div
           className="sm:flex sm:justify-center"
-          animate={{ x: 0 }}
-          initial={{ x: "100%" }}
-          transition={{ delay: 0.5, duration: 1 }}
+          animate={{ y: 0 }}
+          initial={{ y: "100%" }}
+          transition={{ delay: 0.8, duration: 1 }}
         >
           <Image
             src={headshot}
