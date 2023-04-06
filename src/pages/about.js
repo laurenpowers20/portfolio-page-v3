@@ -1,5 +1,5 @@
 import { motion as m } from "framer-motion";
-import { container, item } from "../../animation.js";
+import { container } from "../../animation.js";
 import headshot from "../assets/HeadShot.png";
 import Image from "next/image.js";
 
@@ -13,29 +13,29 @@ export default function About(props) {
         duration: 1,
         ease: "easeOut",
       }}
-      className="text-neonPink-500 absolute top-0 left-0 w-full h-full bg-black lg:px-48 px-16 overflow-y-auto"
+      className="text-neonPink-500 absolute top-0 left-0 w-full h-full bg-black lg:px-48 px-10 overflow-y-auto"
     >
-      <div className="my-52 p-1 flex gap-40">
+      <div className="my-48 p-1 columns-1 gap-40">
         <m.h1
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="lg:text-8xl text-6xl lg:text-left text-left text-neonPink-500"
+          className="lg:text-8xl text-5xl lg:text-left text-left text-neonPink-500"
         >
           About{" "}
-          <Image
-            src={headshot}
-            alt="Picture of Lauren"
-            width={210}
-            height={210}
-            className="rounded-full m-6"
-          />
         </m.h1>
+        <Image
+          src={headshot}
+          alt="Picture of Lauren"
+          width={210}
+          height={210}
+          className="rounded-full  justify-center sm:mx-auto lg:m-5 lg:float-left "
+        />
 
         <m.div
           variants={container}
           animate="show"
-          className="font-latoBold lg:text-4xl text-2xl  "
+          className="font-latoBold lg:text-4xl text-2xl"
         >
           <p>
             {" "}
@@ -48,16 +48,17 @@ export default function About(props) {
             work. I'm one of those rare people who love putting Ikea furniture
             together and “figuring it all out!” I was inspired by my friends who
             had completed Software Engineering Immersive programs and were
-            thriving in their roles. </p><p> In the summer of 2022, I began teaching
-            myself JavaScript and coding simple projects.
-         {" "}
-          
-            In September, I enrolled in General Assembly's Software Engineering
-            Immersive program, where I worked on both front-end and back-end
-            projects every week. Throughout this journey, I've embraced
-            challenges and pushed myself beyond my comfort zone. It's been a
-            wild ride, and I am confident in my abilities and excited to
-            continue learning and growing in my career.
+            thriving in their roles.{" "}
+          </p>
+          <p>
+            {" "}
+            In the summer of 2022, I began teaching myself JavaScript and coding
+            simple projects. In September, I enrolled in General Assembly's
+            Software Engineering Immersive program, where I worked on both
+            front-end and back-end projects every week. Throughout this journey,
+            I've embraced challenges and pushed myself beyond my comfort zone.
+            It's been a wild ride, and I am confident in my abilities and
+            excited to continue learning and growing in my career.
           </p>
         </m.div>
       </div>
