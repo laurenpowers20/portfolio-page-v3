@@ -27,16 +27,16 @@ export default function NavBar() {
       {/* hamburger */}
       <div
         onClick={handleClick}
-        className="sm:hidden z-20 relative text-neonYellow-500 text-4xl hover:text-white "
+        className="sm:hidden z-30 absolute text-neonYellow-500 text-4xl hover:text-white "
       >
-        {!nav ? <FaBars className="z-20" /> : <FaTimes className="z-10" />}
+        {!nav ? <FaBars /> : <FaTimes  />}
       </div>
       {/* mobile menu */}
       <ul
         className={
           !nav
             ? "hidden"
-            : "relative z-20 top-0 left-0 w-full h-screen bg-black text-neonYellow-500 flex flex-col justify-center items-center"
+            : "absolute z-20 top-0 left-0 w-full h-screen bg-black text-neonYellow-500 flex flex-col justify-center items-center"
         }
       >
         {" "}
