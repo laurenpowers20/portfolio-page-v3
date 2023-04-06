@@ -8,7 +8,7 @@ export default function NavBar() {
   const handleClick = () => setNav(!nav);
   return (
     <>
-      <nav className="text-2xl text-neonYellow-500 font-medium z-20 relative">
+      <nav className="text-2xl text-neonYellow-500 font-medium z-20 relative hidden sm:flex">
         <ul className="flex gap-10">
           <Link href={"/"}>
             <li className="hover:text-white">Home</li>
@@ -27,30 +27,30 @@ export default function NavBar() {
       {/* hamburger */}
       <div
         onClick={handleClick}
-        className="sm:hidden z-20 absolute text-neonYellow-500 text-2xl hover:text-white "
+        className="sm:hidden z-20 relative text-neonYellow-500 text-4xl hover:text-white "
       >
-        {!nav ? <FaBars className="z-20" /> : <FaTimes className="z-20" />}
+        {!nav ? <FaBars className="z-20" /> : <FaTimes className="z-10" />}
       </div>
       {/* mobile menu */}
       <ul
         className={
           !nav
             ? "hidden"
-            : "absolute z-20 top-0 left-0 w-full h-screen bg-black text-neonYellow-500 flex flex-col justify-center items-center "
+            : "relative z-20 top-0 left-0 w-full h-screen bg-black text-neonYellow-500 flex flex-col justify-center items-center"
         }
       >
         {" "}
         <Link onClick={handleClick} href={"/"}>
-          <li className="hover:text-white py-6 text-2xl">Home</li>
+          <li className="hover:text-white py-4 text-4xl">Home</li>
         </Link>
         <Link onClick={handleClick} href={"/projects"}>
-          <li className="hover:text-white py-6 text-2xl">Projects</li>
+          <li className="hover:text-white py-4 text-4xl">Projects</li>
         </Link>
         <Link onClick={handleClick} href={"/contact"}>
-          <li className="hover:text-white py-6 text-2xl">Contact</li>
+          <li className="hover:text-white py-4 text-4xl">Contact</li>
         </Link>
         <Link onClick={handleClick} href={"/about"}>
-          <li className="hover:text-white py-6 text-2xl">About</li>
+          <li className="hover:text-white py-6 text-4xl">About</li>
         </Link>
       </ul>
     </>
