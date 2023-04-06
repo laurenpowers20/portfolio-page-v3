@@ -1,11 +1,8 @@
 import Link from "next/link";
-import React, { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-export default function NavBar() {
-  // toggle hamburger menu on click
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
 
+// import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+
+export default function NavBar() {
   return (
     <>
       <nav className="text-2xl text-neonYellow-500 font-medium z-20 relative ">
@@ -26,23 +23,4 @@ export default function NavBar() {
       </nav>
     </>
   );
-}
-
-{
-  /* <nav className="text-2xl text-neonYellow-500 font-medium z-20 relative hidden sm:flex">
-  <ul className="flex gap-12">
-    <Link href={"/"}>
-      <li>Home</li>
-    </Link>
-    <Link href={"/projects"}>
-      <li>Projects</li>
-    </Link>
-    <Link href={"/contact"}>
-      <li>Contact</li>
-    </Link>
-    <Link href={"/about"}>
-      <li>About</li>
-    </Link>
-  </ul>
-</nav>; */
 }

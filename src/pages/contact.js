@@ -3,6 +3,7 @@ import { motion as m } from "framer-motion";
 import { container, item } from "../../animation.js";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { SiMinutemailer } from "react-icons/si";
 
 export default function Contact() {
   return (
@@ -25,6 +26,20 @@ export default function Contact() {
         >
           Let's work together
         </m.h1>
+        <m.h3
+          animate={{ y: 0 }}
+          initial={{ y: "100%" }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="lg:text-6xl text-4xl lg:text-left"
+        >
+          <a
+            className="hover:text-neonPink-500 flex items-center"
+            href="mailto:lauren.powers20@gmail.com"
+          >
+            {" "}
+            <SiMinutemailer className="mr-3 items-center" /> e-mail me
+          </a>
+        </m.h3>
       </div>
       <div className="flex gap-x-20 mx-auto">
         <div className="lg:text-4xl text-2xl">
