@@ -1,81 +1,156 @@
-import headshot from "../assets/HeadShot.png";
+import food from "../assets/foodathome.png";
+import trivia from "../assets/trivia.png";
+import shill from "../assets/shill.png";
 import Image from "next/image.js";
+import { FaGithub } from "react-icons/fa";
+import { BsGlobe } from "react-icons/bs";
 
 export default function ProjectCards() {
   return (
-    // project 1
     <>
-      <div className="flex flex-wrap">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <div className="flex flex-wrap gap-5">
+        {/* project 1 */}
+        <div class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg w-full">
           <Image
-            src={headshot}
-            alt="Picture of Lauren"
-            width={210}
-            height={210}
-            className="rounded-full m-6"
+            src={food}
+            alt="We Got Food at Home Logo"
+            width={120}
+            height={120}
+            className="mx-auto mt-8 rounded-full"
           />
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">We Got Food At Home</div>
-            <p class="text-gray-700 text-base">
+            <div class="font-bold text-neonBlue-500 text-xl text-center mb-2">
+              We Got Food At Home
+            </div>
+            <div class="px-6 pt-4 pb-2 flex justify-center">
+              <a
+                href="https://github.com/laurenpowers20/we-got-food-at-home"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <span className="inline-flex bg-neonYellow-500 hover:bg-neonPink-500 hover:text-white rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2 items-center">
+                  <FaGithub className="mr-2" /> GitHub
+                </span>
+              </a>
+              <a
+                href="https://we-got-food-at-home.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <span className="inline-flex bg-neonYellow-500 hover:bg-neonPink-500 hover:text-white rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2 items-center">
+                  <BsGlobe className="mr-2" />
+                  Demo
+                </span>
+              </a>
+            </div>
+            <p class=" text-neonBlue-500 text-base">
               Worked in a cross-functional team of UX designers and software
               engineers and pitched to a panel of industry experts. We created a
               gamification app that incentivizes users to cook at home instead
-              of ordering out. The app rewards users with points and badges when
-              they prepare meals at home. Users can input ingredients they have
-              on hand and generate a recipe using OpenAI.
-         
-
-            <p>Technologies used:</p>
-            <ul>
-              <li>
-                React
-              </li>
-              <li>
-                OpenAI API
-              </li>
-              <li>
-                Firebase
-              </li>
-              </ul>
+              of ordering out.
+              <p>
+                The app rewards users with points and badges when they prepare
+                meals at home. Users can input ingredients they have on hand and
+                generate a recipe using OpenAI.
               </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              GitHub
-            </span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Live Site
-            </span>
-          
+              <p>Technologies used:</p>
+              <ul>
+                <li>React</li>
+                <li>OpenAI API</li>
+                <li>Firebase</li>
+              </ul>
+            </p>
           </div>
         </div>
         {/* project 2 */}
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg">
           <Image
-            src={headshot}
-            alt="Picture of Lauren"
-            width={210}
-            height={210}
-            className="rounded-full m-6"
+            src={trivia}
+            alt="Game of Trivia Logo"
+            width={120}
+            height={120}
+            className="mx-auto mt-8 rounded-full"
           />
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+            <div class="font-bold text-neonBlue-500 text-xl text-center mb-2">
+              Game of Trivia
+            </div>
+            <div class="px-6 pt-4 pb-2 flex justify-center">
+              <a
+                href="https://github.com/laurenpowers20/trivia"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <span className="inline-flex bg-neonYellow-500 hover:bg-neonPink-500 hover:text-white rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2 items-center">
+                  <FaGithub className="mr-2" /> GitHub
+                </span>
+              </a>
+              <a
+                href="https://triviagame1022.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <span className="inline-flex bg-neonYellow-500 hover:bg-neonPink-500 hover:text-white rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2 items-center">
+                  <BsGlobe className="mr-2" />
+                  Demo
+                </span>
+              </a>
+            </div>
+            <p class=" text-neonBlue-500 text-base">
+              A multiple-choice game of trivia and an example of my skills
+              without libraries or frameworks Styled with CSS to lay out an
+              appealing “bar trivia” theme and design.
             </p>
           </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #photography
-            </span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #travel
-            </span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #winter
-            </span>
+        </div>
+        {/* project 3 */}
+        <div class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg">
+          <Image
+            src={shill}
+            alt="Shill Social Logo"
+            width={120}
+            height={120}
+            className="mx-auto mt-8 rounded-full"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-neonBlue-500 text-xl text-center mb-2">
+              Game of Trivia
+            </div>
+            <div class="px-6 pt-4 pb-2 flex justify-center">
+              <a
+                href="https://github.com/SEI-Buffleheads/twitter-clone-frontend"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <span className="inline-flex bg-neonYellow-500 hover:bg-neonPink-500 hover:text-white rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2 items-center">
+                  <FaGithub className="mr-2" /> GitHub
+                </span>
+              </a>
+              <a
+                href="https://shill-social.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <span className="inline-flex bg-neonYellow-500 hover:bg-neonPink-500 hover:text-white rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2 items-center">
+                  <BsGlobe className="mr-2" />
+                  Demo
+                </span>
+              </a>
+            </div>
+            <p class=" text-neonBlue-500 text-base">
+              A social media network for those who want to share their financial
+              goals, give advice, and discuss trends. Acted as SCRUM master
+              collaborating with 10 developers to create a full-stack web
+              application. Utilized GitHub Projects, Canva, and Figma to execute
+              deadlines, wireframing, and team expectations. Built with React,
+              TailwindCSS, Python, and Django
+            </p>
           </div>
         </div>
       </div>

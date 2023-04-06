@@ -14,19 +14,19 @@ export default function Contact() {
         duration: 0.75,
         ease: "easeOut",
       }}
-      className="text-gray-900 absolute top-0 left-0 w-full h-full bg-neonBlue-500 lg:px-48 px-16"
+      className="text-gray-900 absolute top-0 left-0 w-full h-full bg-neonBlue-500 lg:px-48 px-16 overflow-y-auto"
     >
       <div className="my-52 p-1 overflow-hidden ">
         <m.h1
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="lg:text-8xl text-6xl lg:text-left"
+          className="lg:text-8xl text-5xl lg:text-left"
         >
           Let's work together
         </m.h1>
       </div>
-      <div className="flex gap-40">
+      <div className="flex gap-x-20 mx-auto">
         <div className="lg:text-4xl text-2xl">
           <h4>Find me:</h4>
         </div>
