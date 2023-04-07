@@ -17,12 +17,12 @@ export default function Contact() {
       }}
       className="text-gray-900 absolute top-0 left-0 w-full h-full bg-neonBlue-500 lg:px-48 px-16 overflow-y-auto"
     >
-      <div className="my-52 p-1 overflow-hidden ">
+      <div className="my-48 overflow-hidden ">
         <m.h1
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="lg:text-8xl text-5xl lg:text-left"
+          className="lg:text-8xl text-4xl lg:text-left"
         >
           Let's work together
         </m.h1>
@@ -30,7 +30,7 @@ export default function Contact() {
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="lg:text-6xl text-4xl lg:text-left"
+          className="lg:text-6xl text-3xl lg:text-left"
         >
           <a
             className="hover:text-neonPink-500 flex items-center"

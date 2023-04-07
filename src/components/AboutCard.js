@@ -2,8 +2,9 @@ import { motion as m } from "framer-motion";
 import { container, item } from "../../animation.js";
 import headshot from "../assets/HeadShot.png";
 import Image from "next/image.js";
+
 import Link from "next/link";
-import { GrDocumentText } from "react-icons/gr";
+import { IoDocumentText } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -17,22 +18,67 @@ export default function AboutCard() {
             className="sm:flex sm:justify-center"
             animate={{ y: 0 }}
             initial={{ y: "100%" }}
-            transition={{ delay: 0.8, duration: 1 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
           >
             <Image
               src={headshot}
               alt="Picture of Lauren"
               width={220}
               height={220}
-              className="rounded-full mx-auto mb-5"
+              className="rounded-full mx-auto mb-5 border-solid border-2 border-neonBlue-500 "
             />
           </m.div>
         </div>
-        <div class="flex bg-neonBlue-500 rounded text-black p-5">
-          <div class="mb-auto mt-auto max-w-lg">
-            <h1 class="text-3xl uppercase">Lauren Powers</h1>
-            <p class="font-semibold mb-5">Software Engineer | Web Developer</p>
 
+        <div class="flex bg-neonBlue-500 rounded text-black p-5 border-solid border-2 border-neonPink-500">
+          <div class="mb-auto mt-auto max-w-lg ">
+            <h1 class="text-3xl uppercase">Lauren Powers</h1>
+            <p class="font-semibold mb-2">Software Engineer | Web Developer</p>
+            <div className="font-latoBold lg:text-2xl text-1xl p-1 mx-auto">
+              <m.ul
+                className="flex"
+                variants={container}
+                initial="hidden"
+                animate="show"
+              >
+                <div>
+                  <m.li variants={item} className="px-2">
+                    <Link
+                      className="flex items-center hover:text-neonPink-500"
+                      href="https://drive.google.com/file/d/1mMuZRTahJpCMCIDbAI3qYwbjx1DzomjS/view?usp=share_link"
+                      rel="noreferrer"
+                      alt="resume file"
+                      target="_blank"
+                    >
+                      <IoDocumentText alt="resume" />
+                      Resume
+                    </Link>
+                  </m.li>
+                </div>
+                <div>
+                  <m.li variants={item} className="px-2">
+                    <Link
+                      className="flex items-center hover:text-neonPink-500"
+                      href="https://github.com/laurenpowers20"
+                    >
+                      <FaGithub alt="github" />
+                      GitHub
+                    </Link>
+                  </m.li>
+                </div>
+                <div>
+                  <m.li variants={item} className="px-2">
+                    <Link
+                      className="flex items-center hover:text-neonPink-500"
+                      href="https://www.linkedin.com/in/lauren-powers20/"
+                    >
+                      <FaLinkedin className="items-center" alt="linkedin" />
+                      LinkedIn
+                    </Link>
+                  </m.li>
+                </div>
+              </m.ul>
+            </div>
             <m.div
               variants={container}
               animate="show"

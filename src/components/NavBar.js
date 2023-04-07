@@ -29,7 +29,7 @@ export default function NavBar() {
         onClick={handleClick}
         className="sm:hidden z-30 absolute text-neonYellow-500 text-4xl hover:text-white "
       >
-        {!nav ? <FaBars /> : <FaTimes  />}
+        {!nav ? <FaBars /> : <FaTimes />}
       </div>
       {/* mobile menu */}
       <ul
@@ -50,7 +50,7 @@ export default function NavBar() {
           <li className="hover:text-white py-4 text-4xl">Contact</li>
         </Link>
         <Link onClick={handleClick} href={"/about"}>
-          <li className="hover:text-white py-6 text-4xl">About</li>
+          <li className="hover:text-white py-4 text-4xl">About</li>
         </Link>
       </ul>
     </>
