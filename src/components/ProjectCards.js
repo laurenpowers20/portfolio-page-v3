@@ -19,7 +19,7 @@ export default function ProjectCards() {
         {/* project 1 */}
         <m.div
           variants={item}
-          className="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg w-full"
+          className="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-xl w-full"
         >
           <Image
             src={food}
