@@ -28,7 +28,7 @@ export default function AboutCard() {
             />
           </m.div>
         </div>
-        <div class="flex bg-neonBlue-500 rounded text-black p-10">
+        <div class="flex bg-neonBlue-500 rounded text-black p-5">
           <div class="mb-auto mt-auto max-w-lg">
             <h1 class="text-3xl uppercase">Lauren Powers</h1>
             <p class="font-semibold mb-5">Software Engineer | Web Developer</p>

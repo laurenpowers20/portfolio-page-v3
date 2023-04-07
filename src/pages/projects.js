@@ -23,8 +23,9 @@ export default function Projects() {
           Projects
         </m.h1>
       </div>
-
-      <ProjectCards />
+      <div className="mb-20">
+        <ProjectCards />
+      </div>
     </m.main>
   );
 }

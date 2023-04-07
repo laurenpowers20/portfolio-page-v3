@@ -19,7 +19,7 @@ export default function ProjectCards() {
         {/* project 1 */}
         <m.div
           variants={item}
-          class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg w-full"
+          className="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg w-full"
         >
           <Image
             src={food}
@@ -28,11 +28,11 @@ export default function ProjectCards() {
             height={120}
             className="mx-auto mt-8 rounded-full"
           />
-          <div class="px-6 py-4">
-            <div class="font-bold text-neonBlue-500 text-xl text-center mb-2">
+          <div className="px-6 py-4">
+            <div className="font-bold text-neonBlue-500 text-xl text-center mb-2">
               We Got Food At Home
             </div>
-            <div class="px-6 pt-4 pb-2 flex justify-center">
+            <div className="px-6 pt-4 pb-2 flex justify-center">
               <a
                 href="https://github.com/laurenpowers20/we-got-food-at-home"
                 target="_blank"
@@ -55,21 +55,21 @@ export default function ProjectCards() {
                 </span>
               </a>
             </div>
-            <p class=" text-neonBlue-500 text-base">
+            <p className=" text-neonBlue-500 text-base">
               Worked in a cross-functional team of UX designers and software
               engineers and pitched to a panel of industry experts. We created a
               gamification app that incentivizes users to cook at home instead
               of ordering out.
-              <p>
+              <p className="pt-2">
                 The app rewards users with points and badges when they prepare
                 meals at home. Users can input ingredients they have on hand and
                 generate a recipe using OpenAI.
               </p>
-              <p>Technologies used:</p>
-              <ul>
-                <li>React</li>
-                <li>OpenAI API</li>
-                <li>Firebase</li>
+              <p className="text-neonBlue-500  pt-5">Technologies used:</p>
+              <ul className="text-neonBlue-500 text-base p-5">
+                <li>- React</li>
+                <li>- OpenAI API</li>
+                <li>- Firebase</li>
               </ul>
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function ProjectCards() {
         {/* project 2 */}
         <m.div
           variants={item}
-          class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg"
+          className="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg"
         >
           <Image
             src={trivia}
@@ -86,11 +86,11 @@ export default function ProjectCards() {
             height={120}
             className="mx-auto mt-8 rounded-full"
           />
-          <div class="px-6 py-4">
-            <div class="font-bold text-neonBlue-500 text-xl text-center mb-2">
+          <div className="px-6 py-4">
+            <div className="font-bold text-neonBlue-500 text-xl text-center mb-2">
               Game of Trivia
             </div>
-            <div class="px-6 pt-4 pb-2 flex justify-center">
+            <div className="px-6 pt-4 pb-2 flex justify-center">
               <a
                 href="https://github.com/laurenpowers20/trivia"
                 target="_blank"
@@ -113,17 +113,23 @@ export default function ProjectCards() {
                 </span>
               </a>
             </div>
-            <p class=" text-neonBlue-500 text-base">
+            <p className=" text-neonBlue-500 ">
               A multiple-choice game of trivia and an example of my skills
               without libraries or frameworks Styled with CSS to lay out an
               appealing “bar trivia” theme and design.
             </p>
+            <p className="text-neonBlue-500  pt-5">Technologies used: </p>
+            <ul className="text-neonBlue-500 text-base p-5">
+              <li>- HTML</li>
+              <li>- CSS</li>
+              <li>- JavaScript</li>
+            </ul>
           </div>
         </m.div>
         {/* project 3 */}
         <m.div
           variants={item}
-          class="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg"
+          className="max-w-sm rounded overflow-hidden bg-black shadow-black shadow-lg"
         >
           <Image
             src={shill}
@@ -132,11 +138,11 @@ export default function ProjectCards() {
             height={120}
             className="mx-auto mt-8 rounded-full"
           />
-          <div class="px-6 py-4">
-            <div class="font-bold text-neonBlue-500 text-xl text-center mb-2">
+          <div className="px-6 py-4">
+            <div className="font-bold text-neonBlue-500 text-xl text-center mb-2">
               $hill Social
             </div>
-            <div class="px-6 pt-4 pb-2 flex justify-center">
+            <div className="px-6 pt-4 pb-2 flex justify-center">
               <a
                 href="https://github.com/SEI-Buffleheads/twitter-clone-frontend"
                 target="_blank"
@@ -159,14 +165,20 @@ export default function ProjectCards() {
                 </span>
               </a>
             </div>
-            <p class=" text-neonBlue-500 text-base">
+            <p className=" text-neonBlue-500 text-base">
               A social media network for those who want to share their financial
               goals, give advice, and discuss trends. Acted as SCRUM master
               collaborating with 10 developers to create a full-stack web
               application. Utilized GitHub Projects, Canva, and Figma to execute
-              deadlines, wireframing, and team expectations. Built with React,
-              TailwindCSS, Python, and Django
+              deadlines, wireframing, and team expectations.
             </p>
+            <p className="text-neonBlue-500  pt-5">Technologies used:</p>
+            <ul className="text-neonBlue-500 text-base p-5">
+              <li>- React</li>
+              <li>- Tailwind.css</li>
+              <li>- Python</li>
+              <li>- Django</li>
+            </ul>
           </div>
         </m.div>
       </m.div>
