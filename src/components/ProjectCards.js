@@ -28,7 +28,7 @@ export default function ProjectCards() {
             height={120}
             className="mx-auto mt-8 rounded-full"
           />
-          <div className="px-6 py-4">
+          <div className="px-3 py-4">
             <div className="font-bold text-neonBlue-500 text-xl text-center mb-2">
               We Got Food At Home
             </div>
@@ -86,7 +86,7 @@ export default function ProjectCards() {
             height={120}
             className="mx-auto mt-8 rounded-full"
           />
-          <div className="px-6 py-4">
+          <div className="px-3 py-4">
             <div className="font-bold text-neonBlue-500 text-xl text-center mb-2">
               Game of Trivia
             </div>
@@ -138,11 +138,11 @@ export default function ProjectCards() {
             height={120}
             className="mx-auto mt-8 rounded-full"
           />
-          <div className="px-6 py-4">
+          <div className="px-6 pt-4 pb-2">
             <div className="font-bold text-neonBlue-500 text-xl text-center mb-2">
               $hill Social
             </div>
-            <div className="px-6 pt-4 pb-2 flex justify-center">
+            <div className="px-3 py-4 mb-2 flex justify-center">
               <a
                 href="https://github.com/SEI-Buffleheads/twitter-clone-frontend"
                 target="_blank"

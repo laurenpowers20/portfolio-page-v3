@@ -2,11 +2,12 @@ import { motion as m } from "framer-motion";
 import { container, item } from "../../animation.js";
 import headshot from "../assets/HeadShot.png";
 import Image from "next/image.js";
-
 import Link from "next/link";
 import { IoDocumentText } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GiHiking, GiScubaMask, GiCommercialAirplane } from "react-icons/gi";
+import { TbBeach, TbChefHat } from "react-icons/tb";
+import { HiOutlinePaintBrush } from "react-icons/hi2";
 
 export default function AboutCard() {
   return (
@@ -15,7 +16,7 @@ export default function AboutCard() {
         <div class="max-h-96 md:h-screen">
           {" "}
           <m.div
-            className="sm:flex sm:justify-center"
+            className="sm:flex items-center sm:justify-center"
             animate={{ y: 0 }}
             initial={{ y: "100%" }}
             transition={{ delay: 0.8, duration: 0.5 }}
@@ -30,13 +31,13 @@ export default function AboutCard() {
           </m.div>
         </div>
 
-        <div class="flex bg-neonBlue-500 rounded text-black p-5 border-solid border-2 border-neonPink-500">
+        <div class="flex items-center bg-neonBlue-500 rounded text-black sm:p-5 p-1 border-solid border-2 border-neonPink-500">
           <div class="mb-auto mt-auto max-w-lg ">
             <h1 class="text-3xl uppercase">Lauren Powers</h1>
             <p class="font-semibold mb-2">Software Engineer | Web Developer</p>
             <div className="font-latoBold lg:text-2xl text-1xl p-1 mx-auto">
               <m.ul
-                className="flex"
+                className="flex items-center"
                 variants={container}
                 initial="hidden"
                 animate="show"
@@ -58,7 +59,7 @@ export default function AboutCard() {
                 <div>
                   <m.li variants={item} className="px-2">
                     <Link
-                      className="flex items-center hover:text-neonPink-500"
+                      className="flex  items-center hover:text-neonPink-500"
                       href="https://github.com/laurenpowers20"
                     >
                       <FaGithub alt="github" />
@@ -110,6 +111,29 @@ export default function AboutCard() {
                 growing in my career.
               </p>
             </m.div>
+            <p className="py-3">When I’m not coding, I can be found: </p>
+            <ul>
+              <li className="flex items-center">
+                <GiHiking /> Hiking in the Hudson Valley
+              </li>
+              <li className="flex items-center">
+                {" "}
+                <TbBeach />
+                At the beach (in winter and summer!)
+              </li>
+              <li className="flex items-center">
+                <GiCommercialAirplane /> Traveling somewhere new{" "}
+              </li>
+              <li className="flex items-center">
+                <GiScubaMask /> Scuba diving
+              </li>{" "}
+              <li className="flex items-center">
+                <HiOutlinePaintBrush /> Doing something artistic
+              </li>
+              <li className="flex items-center">
+                <TbChefHat /> Cooking something new and delicious!{" "}
+              </li>
+            </ul>
           </div>
         </div>
       </div>

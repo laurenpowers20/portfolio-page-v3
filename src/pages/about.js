@@ -22,8 +22,9 @@ export default function About(props) {
             className="lg:text-9xl text-6xl lg:text-left text-left flex"
           >
             About{" "}
-          </m.h1> 
-        </div> 
+          </m.h1>
+        </div>
+
         <AboutCard />
       </m.main>
     </>
