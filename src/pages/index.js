@@ -37,19 +37,20 @@ export default function Home() {
           <h3 className=" my-10 lg:text-4xl text-2xl lg:text-left text-left text-neonPink-500">
             Web Developer | Software Engineer
           </h3>
-          <div className="flex my-10 lg:text-6xl text-3xl lg:text-left text-center items-center">
-            <h2>Explore Work</h2>
-            <m.div
-              animate={{ x: "50%" }}
-              initial={{ x: 0 }}
-              transition={{ delay: 0.5, duration: 1 }}
-            >
-              <Link href={"/projects"}>
+          <Link href={"/projects"}>
+            {" "}
+            <div className="flex my-10 lg:text-6xl text-3xl lg:text-left text-center hover:text-neonPink-500 items-center">
+              <h2>Explore Work</h2>
+              <m.div
+                animate={{ x: "50%" }}
+                initial={{ x: 0 }}
+                transition={{ delay: 0.5, duration: 1 }}
+              >
                 {" "}
-                <HiChevronDoubleRight className="lg:text-6xl text-3xl  lg:text-left text-left hover:text-neonPink-500" />
-              </Link>
-            </m.div>
-          </div>
+                <HiChevronDoubleRight className="lg:text-6xl text-3xl  lg:text-left text-left " />
+              </m.div>
+            </div>{" "}
+          </Link>
         </div>
       </main>
     </m.div>
