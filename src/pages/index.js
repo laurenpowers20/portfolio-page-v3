@@ -21,8 +21,8 @@ export default function Home() {
           name="description"
           content="Developer Portfolio for Lauren Powers"
         />
+        <meta property="og:image" content="/wand.png"></meta>
         <link rel="icon" href="/wand.png" />
-        <link rel="apple-touch-icon" href="/wand.png" />
       </Head>
       <main>
         <div className="my-52 p-1 font-latoReg overflow-hidden ">
