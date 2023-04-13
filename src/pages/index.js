@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { motion as m } from "framer-motion";
 import { HiChevronDoubleRight } from "react-icons/hi2";
-import { BsFillLightningFill } from "react-icons/bs";
 import Link from "next/link";
 
 export default function Home() {
