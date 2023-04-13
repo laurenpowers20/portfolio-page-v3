@@ -25,7 +25,7 @@ export default function About(props) {
           </m.h1>
         </div>
 
-        <AboutCard />
+        <AboutCard className="about" />
       </m.main>
     </>
   );

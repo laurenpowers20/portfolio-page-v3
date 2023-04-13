@@ -11,9 +11,9 @@ import { HiOutlinePaintBrush } from "react-icons/hi2";
 
 export default function AboutCard() {
   return (
-    <div class="container mx-auto mb-10 my-10 rounded-lg">
-      <div class="grid grid-cols-1 md:grid-cols-2 h-screen">
-        <div class="max-h-96 md:h-screen">
+    <div className="container mx-auto mb-10 rounded-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
+        <div className="max-h-96 md:h-screen">
           {" "}
           <m.div
             className="sm:flex items-center sm:justify-center"
@@ -31,10 +31,12 @@ export default function AboutCard() {
           </m.div>
         </div>
 
-        <div class="flex items-center bg-neonBlue-500 rounded text-black sm:p-5 p-1 border-solid border-2 border-neonPink-500">
-          <div class="mb-auto mt-auto max-w-lg ">
-            <h1 class="text-3xl uppercase">Lauren Powers</h1>
-            <p class="font-semibold mb-2">Software Engineer | Web Developer</p>
+        <div className="flex items-center bg-neonBlue-500 rounded text-black sm:p-5 pb-100 mb-100 border-solid border-2 border-neonPink-500">
+          <div className="mb-auto mt-auto max-w-lg ">
+            <h1 className="text-3xl uppercase">Lauren Powers</h1>
+            <p className="font-semibold mb-2">
+              Software Engineer | Web Developer
+            </p>
             <div className="font-latoBold lg:text-2xl text-1xl p-1 mx-auto">
               <m.ul
                 className="flex items-center"
@@ -48,7 +50,7 @@ export default function AboutCard() {
                       className="flex items-center hover:text-neonPink-500"
                       href="https://drive.google.com/file/d/1mMuZRTahJpCMCIDbAI3qYwbjx1DzomjS/view?usp=share_link"
                       rel="noreferrer"
-                      alt="resume file"
+                      alt="Resume for Lauren Powers"
                       target="_blank"
                     >
                       <IoDocumentText alt="resume" />
@@ -61,6 +63,9 @@ export default function AboutCard() {
                     <Link
                       className="flex  items-center hover:text-neonPink-500"
                       href="https://github.com/laurenpowers20"
+                      target="_blank"
+                      rel="noreferrer"
+                      alt="GitHub page for Lauren Powers"
                     >
                       <FaGithub alt="github" />
                       GitHub
@@ -72,6 +77,9 @@ export default function AboutCard() {
                     <Link
                       className="flex items-center hover:text-neonPink-500"
                       href="https://www.linkedin.com/in/lauren-powers20/"
+                      target="_blank"
+                      rel="noreferrer"
+                      alt="LinkedIn profile for Lauren Powers"
                     >
                       <FaLinkedin className="items-center" alt="linkedin" />
                       LinkedIn
@@ -112,7 +120,7 @@ export default function AboutCard() {
               </p>
             </m.div>
             <p className="py-3">When I’m not coding, I can be found: </p>
-            <ul>
+            <ul className="pb-10">
               <li className="flex items-center">
                 <GiHiking /> Hiking in the Hudson Valley
               </li>
