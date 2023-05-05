@@ -52,6 +52,7 @@ export default function Contact() {
                 <Link
                   className="flex hover:text-neonPink-500"
                   href="https://github.com/laurenpowers20"
+                  target="_blank"
                 >
                   <FaGithub alt="github" />
                   GitHub
@@ -63,6 +64,7 @@ export default function Contact() {
                 <Link
                   className="flex hover:text-neonPink-500"
                   href="https://www.linkedin.com/in/lauren-powers20/"
+                  target="_blank"
                 >
                   <FaLinkedin alt="linkedin" />
                   LinkedIn

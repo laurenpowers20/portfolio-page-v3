@@ -1,6 +1,6 @@
 import { motion as m } from "framer-motion";
 import { container, item } from "../../animation.js";
-import headshot from "../assets/HeadShot.png";
+import headshot from "../assets/HeadShot2.png";
 import Image from "next/image.js";
 import Link from "next/link";
 import { IoDocumentText } from "react-icons/io5";
@@ -48,7 +48,7 @@ export default function AboutCard() {
                   <m.li variants={item} className="px-2">
                     <Link
                       className="flex items-center hover:text-neonPink-500"
-                      href="https://drive.google.com/file/d/1mMuZRTahJpCMCIDbAI3qYwbjx1DzomjS/view?usp=share_link"
+                      href="https://drive.google.com/file/d/1OBUW7vUBJxx8ScbDuh8Vcu0IKqvMhkyH/view?usp=share_link"
                       rel="noreferrer"
                       alt="Resume for Lauren Powers"
                       target="_blank"
@@ -122,24 +122,27 @@ export default function AboutCard() {
             <p className="py-3">When I’m not coding, I can be found: </p>
             <ul className="pb-10">
               <li className="flex items-center">
-                <GiHiking /> Hiking in the Hudson Valley
+                <GiHiking className="mr-3" /> Hiking in the Hudson Valley
               </li>
               <li className="flex items-center">
                 {" "}
-                <TbBeach />
+                <TbBeach className="mr-3" />
                 At the beach (in winter and summer!)
               </li>
               <li className="flex items-center">
-                <GiCommercialAirplane /> Traveling somewhere new{" "}
+                <GiCommercialAirplane className="mr-3" /> Traveling somewhere
+                new{" "}
               </li>
               <li className="flex items-center">
-                <GiScubaMask /> Scuba diving
+                <GiScubaMask className="mr-3" /> Scuba diving
               </li>{" "}
               <li className="flex items-center">
-                <HiOutlinePaintBrush /> Doing something artistic
+                <HiOutlinePaintBrush className="mr-3" /> Doing something
+                artistic
               </li>
               <li className="flex items-center">
-                <TbChefHat /> Cooking something new and delicious!{" "}
+                <TbChefHat className="mr-3" /> Cooking something new and
+                delicious!{" "}
               </li>
             </ul>
           </div>
