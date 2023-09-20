@@ -98,25 +98,23 @@ export default function AboutCard() {
                 I am an engineer based in New York City. My professional
                 background lies in financial operations, where I spent 12 years
                 at JP Morgan Chase. During my tenure there, I steadily
-                progressed within the firm and eventually became the assistant
-                manager of one of its largest branches in NYC. However, when my
-                time in banking came to an end, I saw an opportunity to pursue
-                my passion for building and hands-on work. I'm one of those rare
-                people who love putting Ikea furniture together and “figuring it
-                all out!” I was inspired by my friends who had completed
-                Software Engineering Immersive programs and were thriving in
-                their roles.{" "}
+                progressed within the firm and eventually became the Assistant
+                Manager of one of its largest branches in NYC. When my time in
+                banking came to an end, I saw an opportunity to pursue my
+                passion for building and hands-on work. I’m a rare person who
+                loves putting Ikea furniture together and “figuring it all out.”
+                My friends who had completed Software Engineering Immersive
+                programs and were thriving in their roles inspired me.{" "}
               </p>
               <p className="p-2">
                 {" "}
                 In the summer of 2022, I began teaching myself JavaScript and
-                coding simple projects. In September, I enrolled in General
-                Assembly's Software Engineering Immersive program, where I
-                worked on both front-end and back-end projects every week.
-                Throughout this journey, I've embraced challenges and pushed
-                myself beyond my comfort zone. It's been a wild ride, and I am
-                confident in my abilities and excited to continue learning and
-                growing in my career.
+                coding simple projects. I enrolled in General Assembly's
+                Software Engineering Immersive program, working on front-end and
+                back-end projects every week. Throughout this journey, I've
+                embraced challenges and pushed myself beyond my comfort zone.
+                It's been a wild ride, and I am confident in my abilities and
+                excited to continue learning and growing in my career.
               </p>
             </m.div>
             <p className="py-3">When I’m not coding, I can be found: </p>
