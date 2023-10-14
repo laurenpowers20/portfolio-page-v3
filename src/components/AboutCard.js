@@ -94,20 +94,20 @@ export default function AboutCard() {
                 className="rounded-full mx-auto mr-2 border-solid border-2 border-neonYellow-500 float-left m-2 "
               />
               <p className="p-2">
-                I have over 12 years of experience in financial operations,
-                where I worked at JPMorgan Chase & Co. in various roles, from
-                Lead Associate Operations to Assistant Branch Manager. I
-                managed, trained, and mentored teams of employees, ensured
-                compliance and audit standards, and handled complex customer
-                issues. I also collaborated with the branch manager to direct
-                sales and branch operations, increasing review scores and
-                customer retention rates.
+                I have over 12 years of experience in financial operations at
+                JPMorgan Chase & Co. where I held various titles, from Lead
+                Associate Operations to Assistant Branch Manager. I managed,
+                trained, and mentored teams of employees, ensured compliance and
+                audit standards, and handled complex customer issues. I also
+                collaborated with branch managers to direct sales and branch
+                operations, increasing review scores and customer retention
+                rates.
               </p>
               <p className="p-2">
                 {" "}
-                In 2022, I decided to pursue my passion for building and
-                hands-on work, and enrolled in General Assembly's Software
-                Engineering Immersive program. I learned React, JavaScript, and
+                In 2022, I began to pursue my passion for building and hands-on
+                work by enrolling in General Assembly's Software Engineering
+                Immersive program. I learned React, JavaScript, Python, and
                 other technologies to develop full-stack web applications. I
                 also gained valuable problem-solving, debugging, and
                 collaboration skills that enhanced my engineering mindset and
@@ -115,10 +115,10 @@ export default function AboutCard() {
               </p>
               <p className="p-2">
                 I am motivated by challenges, learning, and making a positive
-                difference in the world. I enjoy working with diverse and
-                passionate teams that share the same vision and values. I am
-                always eager to expand my knowledge and skills, and to apply
-                them to meaningful projects that can benefit society and the
+                change in the world. I enjoy working with diverse and passionate
+                teams that share the same vision and values. I am always eager
+                to expand my knowledge and skills and to apply them to
+                meaningful projects that can benefit society and the
                 environment.
               </p>
             </m.div>
