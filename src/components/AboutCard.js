@@ -12,31 +12,23 @@ import { HiOutlinePaintBrush } from "react-icons/hi2";
 export default function AboutCard() {
   return (
     <div className="container mx-auto mb-10 rounded-lg">
-      <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
-        <div className="max-h-96 md:h-screen">
+      <div className="grid grid-cols-1 md:grid-cols-1 h-screen">
+        <div>
           {" "}
           <m.div
             className="sm:flex items-center sm:justify-center"
             animate={{ y: 0 }}
             initial={{ y: "100%" }}
             transition={{ delay: 0.8, duration: 0.5 }}
-          >
-            <Image
-              src={headshot}
-              alt="Picture of Lauren"
-              width={220}
-              height={220}
-              className="rounded-full mx-auto mb-5 border-solid border-2 border-neonBlue-500 "
-            />
-          </m.div>
+          ></m.div>
         </div>
 
-        <div className="flex items-center bg-neonBlue-500 rounded text-black sm:p-5 pb-100 mb-100 border-solid border-2 border-neonPink-500">
-          <div className="mb-auto mt-auto max-w-lg ">
-            <h1 className="text-3xl uppercase">Lauren Powers</h1>
-            <p className="font-semibold mb-2">
+        <div className="flex items-center bg-neonBlue-500 rounded text-black sm:p-5 pb-100 mb-100 border-solid border-2 border-neonPink-500 max-w">
+          <div className="mb-auto mt-auto ">
+            <h1 className="text-3xl uppercase p-1 ">Lauren Powers</h1>
+            <p className="font-semibold mb-2 p-1 ">
               Software Engineer | Web Developer
-            </p>
+            </p>{" "}
             <div className="font-latoBold lg:text-2xl text-1xl p-1 mx-auto">
               <m.ul
                 className="flex items-center"
@@ -94,38 +86,51 @@ export default function AboutCard() {
               className="font-latoBold"
             >
               {" "}
+              <Image
+                src={headshot}
+                alt="Picture of Lauren"
+                width={160}
+                height={160}
+                className="rounded-full mx-auto mr-2 border-solid border-2 border-neonYellow-500 float-left m-2 "
+              />
               <p className="p-2">
-                I am an engineer based in New York City. My professional
-                background lies in financial operations, where I spent 12 years
-                at JP Morgan Chase. During my tenure there, I steadily
-                progressed within the firm and eventually became the Assistant
-                Manager of one of its largest branches in NYC. When my time in
-                banking came to an end, I saw an opportunity to pursue my
-                passion for building and hands-on work. I’m a rare person who
-                loves putting Ikea furniture together and “figuring it all out.”
-                My friends who had completed Software Engineering Immersive
-                programs and were thriving in their roles inspired me.{" "}
+                I have over 12 years of experience in financial operations,
+                where I worked at JPMorgan Chase & Co. in various roles, from
+                Lead Associate Operations to Assistant Branch Manager. I
+                managed, trained, and mentored teams of employees, ensured
+                compliance and audit standards, and handled complex customer
+                issues. I also collaborated with the branch manager to direct
+                sales and branch operations, increasing review scores and
+                customer retention rates.
               </p>
               <p className="p-2">
                 {" "}
-                In the summer of 2022, I began teaching myself JavaScript and
-                coding simple projects. I enrolled in General Assembly's
-                Software Engineering Immersive program, working on front-end and
-                back-end projects every week. Throughout this journey, I've
-                embraced challenges and pushed myself beyond my comfort zone.
-                It's been a wild ride, and I am confident in my abilities and
-                excited to continue learning and growing in my career.
+                In 2022, I decided to pursue my passion for building and
+                hands-on work, and enrolled in General Assembly's Software
+                Engineering Immersive program. I learned React, JavaScript, and
+                other technologies to develop full-stack web applications. I
+                also gained valuable problem-solving, debugging, and
+                collaboration skills that enhanced my engineering mindset and
+                portfolio.
+              </p>
+              <p className="p-2">
+                I am motivated by challenges, learning, and making a positive
+                difference in the world. I enjoy working with diverse and
+                passionate teams that share the same vision and values. I am
+                always eager to expand my knowledge and skills, and to apply
+                them to meaningful projects that can benefit society and the
+                environment.
               </p>
             </m.div>
-            <p className="py-3">When I’m not coding, I can be found: </p>
-            <ul className="pb-10">
+            <p className="py-3  p-4">When I’m not coding, I can be found: </p>
+            <ul className="pb-10  p-4">
               <li className="flex items-center">
                 <GiHiking className="mr-3" /> Hiking in the Hudson Valley
               </li>
               <li className="flex items-center">
                 {" "}
                 <TbBeach className="mr-3" />
-                At the beach (in winter and summer!)
+                At the beach (in winter and summer)
               </li>
               <li className="flex items-center">
                 <GiCommercialAirplane className="mr-3" /> Traveling somewhere
@@ -139,8 +144,7 @@ export default function AboutCard() {
                 artistic
               </li>
               <li className="flex items-center">
-                <TbChefHat className="mr-3" /> Cooking something new and
-                delicious!{" "}
+                <TbChefHat className="mr-3" /> Cooking{" "}
               </li>
             </ul>
           </div>
