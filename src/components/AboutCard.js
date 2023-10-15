@@ -123,7 +123,7 @@ export default function AboutCard() {
               </p>
             </m.div>
             <p className="py-3  p-4">When I’m not coding, I can be found: </p>
-            <ul className="pb-10  p-4">
+            <ul className="pb-4   p-4">
               <li className="flex items-center">
                 <GiHiking className="mr-3" /> Hiking in the Hudson Valley
               </li>

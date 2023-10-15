@@ -18,7 +18,7 @@ export default function Projects() {
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="lg:text-8xl text-5xl lg:text-left text-left mr-10 flex"
+          className="lg:text-8xl text-5xl lg:text-left text-left ml-20 flex"
         >
           Projects
         </m.h1>
